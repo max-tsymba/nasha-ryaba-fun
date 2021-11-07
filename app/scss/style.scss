@@ -11,30 +11,6 @@
 @import './modules/global';
 /*======================================================================================*/
 
-
-/*======================================DUBLICATES======================================*/
-%title{
-    font-family: serif;
-    font-size: 30px;
-    font-weight: 400;
-    color: #000;
-}
-
-%text{
-    font-family: serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000;
-}
-
-%buttons{
-    @include create-button(14, 100, 20);
-    color: #FFFFFF;
-    font-weight: 400;
-}
-/*======================================================================================*/
-
-
 /*=====================================IMPORT PARTS=====================================*/
 @import './parts/header';
 @import './parts/main';
