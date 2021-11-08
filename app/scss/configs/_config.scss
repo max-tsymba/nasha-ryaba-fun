@@ -33,10 +33,14 @@ button{
     display: inline-block;
 }
 
+.ml-auto{
+    margin-left: auto;
+}
+
 .burger{
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     display: inline-block;
     position: relative;
     z-index: 100;
@@ -49,9 +53,9 @@ button{
 }
 
 .burger-line{
-    width: 35px;
-    height: 3px;
-    background: #FFFFFF;
+    width: 45px;
+    height: 6px;
+    background: #323232;
     position: absolute;
     transition: .3s all;
     top: 50%;
@@ -62,21 +66,21 @@ button{
     &::before{
         content: "";
         position: absolute;
-        height: 3px;
+        height: 6px;
         transition: .3s all;
         border-radius: 4px;
     }
 
     &::after{
-        top: -8px;
-        background: #FFFFFF;
-        width: 35px;
+        top: -12px;
+        background: #323232;
+        width: 45px;
     }
 
     &::before{
-        top: 8px;
-        background: #FFFFFF;
-        width: 35px;
+        top: 12px;
+        background: #323232;
+        width: 45px;
     }
 
 }
