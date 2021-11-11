@@ -8,6 +8,18 @@ a{
     transition: .3s all;
 }
 
+.flex-1{
+    flex: 1 1 0%;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
 button{
     background-color: transparent;
     border: none;
@@ -49,11 +61,6 @@ button{
     position: relative;
     z-index: 100;
     display: block;
-
-    @media(max-width: 768px) {
-        display: block;
-        right: 15px;
-    }
 }
 
 .burger-line{
