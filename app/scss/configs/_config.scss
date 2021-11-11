@@ -51,6 +51,14 @@ button{
 
 .w-half{
     width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+
+        img{
+            margin: 0 auto;
+        }
+    }
 }
 
 .burger{
