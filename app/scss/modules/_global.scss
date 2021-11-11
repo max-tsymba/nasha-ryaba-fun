@@ -4,6 +4,10 @@ body{
     height: 100%;
 }
 
+.container-header{
+    position: relative;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
