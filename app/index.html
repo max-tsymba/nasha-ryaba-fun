@@ -76,9 +76,9 @@
 
                         <div class="top__images">
                             <div class="w-half images-half">
-                                <img class="top__images-half" src="./img/win.png" alt="image">
+                                <img class="top__images-half" src="./img/win.png" alt="image" id="rotate-img">
                             </div>
-                            <div class="top__images-block w-half">
+                            <div class="top__images-block w-half" id="push-img">
                                 <div class="top__images-img">
                                     <img src="./img/5x.png" alt="image">
                                 </div>
@@ -122,12 +122,13 @@
                 <div class="container">
                     <div class="gifts__inner">
 
-                        <h1 class="gifts__title">
+                        <h1 class="gifts__title" data-aos="fade-up-right">
                             <span>та</span> щотижневі подарунки
                         </h1>
 
                         <div class="gifts__items">
-                            <div class="gifts__item">
+                            <div class="gifts__item aos-init" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                                 <img src="./img/buttle.png" alt="image">
 
                                 <div class="gifts__amount">
@@ -138,7 +139,8 @@
                                 </div>
                             </div>
 
-                            <div class="gifts__item">
+                            <div class="gifts__item aos-init" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                                 <img src="./img/skeyt.png" alt="image">
 
                                 <div class="gifts__amount">
@@ -149,7 +151,8 @@
                                 </div>
                             </div>
 
-                            <div class="gifts__item">
+                            <div class="gifts__item aos-init" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                                 <img src="./img/velosip.png" alt="image">
 
                                 <div class="gifts__amount">
@@ -239,6 +242,12 @@
 
     </div>
 
+    <!-- reCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld13OcaAAAAAG8rKkfe0ykgiS7fp4Z1wjE8uYL1"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/aos.min.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 </html>
