@@ -7,6 +7,7 @@
 
     @media (max-width: 768px) {
         padding-top: 250px;
+        min-height: unset;
      }
      
     @media (max-width: 576px) {
@@ -159,6 +160,10 @@
             font-family: 'PT Sans';
             font-size: 10px;
         }
+
+        @media (max-width: 768px) {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -195,6 +200,16 @@
 .gifts{
     padding-top: 40px;
 
+    @media (max-width: 768px) {
+        background-image: url('../img/mb-bg.png') !important;
+        background-position: bottom -220px right 0px !important;
+        background-size: cover !important;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 30px;
+    }
+
     &__inner{
         position: relative;
     }
@@ -207,6 +222,18 @@
         color: white;
         letter-spacing: -0.10em;
         text-align: center;
+        text-transform: uppercase;
+        @media (max-width: 768px) {
+            font-size: 42px;
+        }
+
+        span {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: inline-block;
+            }
+        }
     }
 
     &__items{
@@ -216,12 +243,53 @@
         align-items: flex-end;
         margin: 0 -25px;
         margin-top: 70px;
+
+        @media (max-width: 768px) {
+           flex-direction: column;
+           align-items: center;
+           margin: 0;
+        }
     }
 
     &__item{
         position: relative;
         margin: 0 25px;
         padding: 0 15px;
+
+        @media (max-width: 768px) {
+            margin: 30px 0px;
+        }
+
+        &:nth-child(1) {
+            @media (max-width: 768px) {
+               max-width: 180px;
+            }
+
+            @media (max-width: 576px) {
+                max-width: 150px;
+            }
+        }
+
+        &:nth-child(2) {
+            @media (max-width: 768px) {
+               max-width: 350px;
+            }
+
+            @media (max-width: 576px) {
+                max-width: 250px;
+            }
+        }
+
+        &:nth-child(3) {
+
+            @media (max-width: 768px) {
+                max-width: 400px;
+             }
+
+            @media (max-width: 576px) {
+                max-width: 330px;
+            }
+        }
     }
 
     &__amount{
@@ -232,6 +300,12 @@
         border-radius: 50%;
         display: inline-block;
         padding: 10px;
+
+        @media (max-width: 768px) {
+            padding: 5px;
+            right: -20px;
+            bottom: -20px;
+        }
 
         &-circle{
             color: white;
@@ -245,15 +319,29 @@
             height: 120px;
             width: 120px;
 
+            @media (max-width: 768px) {
+                width: 70px;
+                height: 70px;
+            }   
+
             span{
                 letter-spacing: -0.02em;
                 &:nth-child(1) {
                     font-size: 46px;
                     line-height: 36px;
+
+                    @media (max-width: 768px) {
+                        font-size: 24px;
+                        line-height: 18px;
+                    }
                 }
 
                 &:nth-child(2) {
                     font-size: 24px;
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
