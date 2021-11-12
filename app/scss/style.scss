@@ -138,3 +138,35 @@
         transform: translate3d(0px,100px,0);
     }
 }
+
+
+.gifts__image{
+    &-img{
+        margin: 0 auto;
+        animation: IDown 2s ease-in-out infinite;
+    }
+    margin-bottom: 40px;
+}
+
+#winners{
+    min-height: 100vh;
+    padding-top: 350px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-image: none !important;
+}
+
+.winners__block{
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #ED2024; 
+    a{
+        color: #ED2024;
+    }
+}

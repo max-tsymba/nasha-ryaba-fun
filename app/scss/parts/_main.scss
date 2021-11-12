@@ -4,11 +4,16 @@
     padding-top: 300px;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
 
     @media (max-width: 768px) {
         padding-top: 250px;
         min-height: unset;
-     }
+    }
+
+    @media (max-width: 1024px) and (min-height: 1000px) {
+        min-height: unset;
+    }
      
     @media (max-width: 576px) {
         padding-top: 160px;
@@ -138,7 +143,7 @@
 
     &__logos{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         width: 450px;
         justify-content: space-between;
         margin-top: 65px;
@@ -150,6 +155,14 @@
         @media (max-width: 576px) {
             max-width: 100%;
             padding: 0 15px;
+        }
+
+        img{
+            transition: all .3s;
+            &:hover{
+                filter: drop-shadow(0 0 5px rgb(49, 49, 49));
+                transform: scale(1.05);
+            }
         }
          
     }
@@ -200,10 +213,11 @@
 
 .gifts{
     padding-top: 40px;
+    background-position: bottom -120px right 0px !important;
 
     @media (max-width: 768px) {
         background-image: url('../img/mb-bg.png') !important;
-        background-position: bottom -220px right 0px !important;
+        background-position: bottom -400px right 0px !important;
         background-size: cover !important;
     }
 
@@ -226,6 +240,7 @@
         text-transform: uppercase;
         @media (max-width: 768px) {
             font-size: 42px;
+            margin-bottom: 30px;
         }
 
         span {
