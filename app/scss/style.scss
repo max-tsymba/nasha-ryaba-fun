@@ -19,10 +19,6 @@
 
 
 #rotate-img {
-    animation: Irotate 1.5s ease-in-out infinite;
-}
-
-#push-img {
     animation: IPush 1.5s ease-in infinite;
 }
 
@@ -141,8 +137,12 @@
 
 
 .gifts__image{
-    &-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .anima-img{
         margin: 0 auto;
+        margin-right: 20px;
         animation: IDown 2s ease-in-out infinite;
     }
     margin-bottom: 40px;
